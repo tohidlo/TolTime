@@ -1,1 +1,195 @@
+/****************************************
+Name: TolTime  
+Version: 1.0 
+****************************************/
 
+/* Timeline styles */
+.Tol-Timeline {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Progress bar */
+.tol-prg-bar {
+    width: 100%;
+    min-height: 5px; /* Minimum height of the parent div */
+    background-color: #e0e0e0; /* Background color */
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+/* Progress classes with different percentages */
+.tol-prg-10 { width: 10%; }
+.tol-prg-20 { width: 20%; }
+.tol-prg-30 { width: 30%; }
+.tol-prg-40 { width: 40%; }
+.tol-prg-50 { width: 50%; }
+.tol-prg-60 { width: 60%; }
+.tol-prg-70 { width: 70%; }
+.tol-prg-80 { width: 80%; }
+.tol-prg-90 { width: 90%; }
+.tol-prg-95 { width: 95%; }
+
+/* Styles for different colors */
+.tol-prg-blue {
+    background-color: #3498db; /* Blue color */
+}
+
+.tol-prg-green {
+    background-color: #2ecc71; /* Green color */
+}
+
+.tol-prg-red {
+    background-color: #e74c3c; /* Red color */
+}
+
+.tol-prg-yellow {
+    background-color: #f1c40f; /* Yellow color */
+}
+
+.tol-prg-purple {
+    background-color: #9b59b6; /* Purple color */
+}
+
+/* Height classes */
+.tol-prg-hit-5 {
+    height: 5px; /* Height 5px */
+}
+
+.tol-prg-hit-10 {
+    height: 10px; /* Height 10px */
+}
+
+.tol-prg-hit-15 {
+    height: 15px; /* Height 15px */
+}
+
+.tol-prg-hit-20 {
+    height: 20px; /* Height 20px */
+}
+
+.tol-prg-hit-25 {
+    height: 25px; /* Height 25px */
+}
+
+
+/* Event styles */
+.Tol-Timeline-event {
+    position: relative;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.Tol-Timeline-event:hover {
+    background-color: #ecf0f1; /* Background color change */
+    transform: scale(1.02); /* Scale up */
+    transition: all 0.3s ease; /* Animation */
+}
+
+/* Border classes */
+.tol-left-br {
+    border-left: 4px solid; /* Border width and style */
+}
+
+.tol-right-br {
+    border-right: 4px solid;
+}
+
+.tol-top-br {
+    border-top: 4px solid;
+}
+
+.tol-bottom-br {
+    border-bottom: 4px solid;
+}
+
+/* Colored border classes */
+.tol-br-red {
+    border-color: #e74c3c; /* Red color */
+}
+
+.tol-br-blue {
+    border-color: #3498db; /* Blue color */
+}
+
+.tol-br-green {
+    border-color: #2ecc71; /* Green color */
+}
+
+.tol-br-yellow {
+    border-color: #f1c40f; /* Yellow color */
+}
+
+.tol-br-purple {
+    border-color: #9b59b6; /* Purple color */
+}
+
+/* Direction classes */
+.tol-dir-rtl {
+    direction: rtl; /* Set right-to-left direction */
+    text-align: right; /* Align text to the right */
+}
+
+.tol-dir-ltr {
+    direction: ltr; /* Set left-to-right direction */
+    text-align: left; /* Align text to the left */
+}
+
+/* Event date */
+.Tol-Timeline-date {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+    font-weight: bold; /* Emphasize the date */
+    color: #2980b9; /* Change date color */
+}
+
+/* Event content */
+.Tol-Timeline-content {
+    padding-left: 20px;
+}
+
+.Tol-Timeline-content h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #34495e;
+}
+
+.Tol-Timeline-content p {
+    margin: 5px 0;
+    color: #2c3e50;
+}
+
+/* Icons */
+.tol-icon-clock {
+    font-size: 16px; /* Icon size */
+    margin-left: 5px; /* Distance from the date */
+    color: #8e44ad; /* Icon color */
+}
+
+/* Adding animations */
+.Tol-Timeline-event {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.5s forwards;
+}
+
+.Tol-Timeline-event:nth-child(odd) {
+    animation-delay: 0.2s;
+}
+
+.Tol-Timeline-event:nth-child(even) {
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
